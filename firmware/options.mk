@@ -1,8 +1,0 @@
-BOARD_TAG = uno
-ARCHITECTURE = avr
-
-MONITOR_PORT = /dev/ttyACM0
-MONITOR_BAUDRATE = 115200
-
-USER_LIB_PATH += lib
-ARDUINO_LIBS += DcMotor ExtraMath nanopb
