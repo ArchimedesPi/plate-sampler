@@ -1,0 +1,3 @@
+[submodule "firmware/vendor/nanopb"]
+	path = firmware/vendor/nanopb
+	url = https://github.com/nanopb/nanopb
