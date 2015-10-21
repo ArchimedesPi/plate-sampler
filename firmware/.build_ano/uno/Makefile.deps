@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+	
+
+
+
+.build_ano/uno/ExtraMath/ExtraMath.d : lib/ExtraMath/ExtraMath.cpp
+	@mkdir -p .build_ano/uno/ExtraMath
+	@/usr/share/arduino/hardware/tools/avr/bin/avr-gcc -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=165 -DARDUINO_ARCH_AVR -I/usr/share/arduino/hardware/arduino/avr/cores/arduino -ffunction-sections -fdata-sections -g -Os -w -I/usr/share/arduino/hardware/arduino/avr/variants/standard -I/usr/share/arduino/hardware/arduino/avr/cores/arduino -Ilib/ExtraMath -Ilib/nanopb -Ilib/nanopb/generator -Ilib/nanopb/extra -Ilib/nanopb/tests -Ilib/nanopb/tools -Ilib/nanopb/docs -Ilib/nanopb/generator/proto -Ilib/nanopb/generator/proto/google -Ilib/nanopb/generator/proto/google/protobuf -Ilib/nanopb/generator/proto/google/protobuf -Ilib/nanopb/tests/io_errors_pointers -Ilib/nanopb/tests/backwards_compatibility -Ilib/nanopb/tests/decode_unittests -Ilib/nanopb/tests/basic_stream -Ilib/nanopb/tests/fuzztest -Ilib/nanopb/tests/callbacks -Ilib/nanopb/tests/common -Ilib/nanopb/tests/package_name -Ilib/nanopb/tests/oneof -Ilib/nanopb/tests/buffer_only -Ilib/nanopb/tests/alltypes_pointer -Ilib/nanopb/tests/intsizes -Ilib/nanopb/tests/encode_unittests -Ilib/nanopb/tests/field_size_32 -Ilib/nanopb/tests/cyclic_messages -Ilib/nanopb/tests/extra_fields -Ilib/nanopb/tests/enum_sizes -Ilib/nanopb/tests/alltypes -Ilib/nanopb/tests/splint -Ilib/nanopb/tests/missing_fields -Ilib/nanopb/tests/alltypes_callback -Ilib/nanopb/tests/field_size_16 -Ilib/nanopb/tests/extensions -Ilib/nanopb/tests/basic_buffer -Ilib/nanopb/tests/mem_release -Ilib/nanopb/tests/site_scons -Ilib/nanopb/tests/io_errors -Ilib/nanopb/tests/cxx_main_program -Ilib/nanopb/tests/no_messages -Ilib/nanopb/tests/multiple_files -Ilib/nanopb/tests/regression -Ilib/nanopb/tests/options -Ilib/nanopb/tests/special_characters -Ilib/nanopb/tests/message_sizes -Ilib/nanopb/tests/no_errmsg -Ilib/nanopb/tests/fuzztest/sample_data -Ilib/nanopb/tests/site_scons/site_tools -Ilib/nanopb/tests/regression/issue_145 -Ilib/nanopb/tests/regression/issue_125 -Ilib/nanopb/tests/regression/issue_166 -Ilib/nanopb/tests/regression/issue_118 -Ilib/nanopb/tests/regression/issue_141 -Ilib/nanopb/tests/regression/issue_172 -Ilib/nanopb/tests/regression/issue_172/submessage -Ilib/nanopb/tests/regression/issue_172/submessage -Ilib/nanopb/docs/logo -Ilib/nanopb/generator/proto/google -Ilib/nanopb/generator/proto/google/protobuf -Ilib/nanopb/generator/proto/google/protobuf -Ilib/nanopb/tests/fuzztest/sample_data -Ilib/nanopb/tests/site_scons/site_tools -Ilib/nanopb/tests/regression/issue_145 -Ilib/nanopb/tests/regression/issue_125 -Ilib/nanopb/tests/regression/issue_166 -Ilib/nanopb/tests/regression/issue_118 -Ilib/nanopb/tests/regression/issue_141 -Ilib/nanopb/tests/regression/issue_172 -Ilib/nanopb/tests/regression/issue_172/submessage -Ilib/nanopb/tests/regression/issue_172/submessage -Ilib/nanopb/generator/proto/google/protobuf -Ilib/nanopb/tests/regression/issue_172/submessage -Ilib/DcMotor -I/usr/share/arduino/libraries/Esplora -I/usr/share/arduino/libraries/Esplora/src -I/usr/share/arduino/libraries/SpacebrewYun -I/usr/share/arduino/libraries/SpacebrewYun/src -I/usr/share/arduino/libraries/WiFi -I/usr/share/arduino/libraries/WiFi/src -I/usr/share/arduino/libraries/WiFi/src/utility -I/usr/share/arduino/libraries/LiquidCrystal -I/usr/share/arduino/libraries/LiquidCrystal/src -I/usr/share/arduino/libraries/SD -I/usr/share/arduino/libraries/SD/src -I/usr/share/arduino/libraries/SD/src/utility -I/usr/share/arduino/libraries/Ethernet -I/usr/share/arduino/libraries/Ethernet/src -I/usr/share/arduino/libraries/Ethernet/src/utility -I/usr/share/arduino/libraries/Robot_Motor -I/usr/share/arduino/libraries/Robot_Motor/src -I/usr/share/arduino/libraries/TFT -I/usr/share/arduino/libraries/TFT/src -I/usr/share/arduino/libraries/TFT/src/utility -I/usr/share/arduino/libraries/Servo -I/usr/share/arduino/libraries/Servo/src -I/usr/share/arduino/libraries/Servo/src/avr -I/usr/share/arduino/libraries/Servo/src/sam -I/usr/share/arduino/libraries/RobotIRremote -I/usr/share/arduino/libraries/RobotIRremote/src -I/usr/share/arduino/libraries/Stepper -I/usr/share/arduino/libraries/Stepper/src -I/usr/share/arduino/libraries/GSM -I/usr/share/arduino/libraries/GSM/src -I/usr/share/arduino/libraries/Robot_Control -I/usr/share/arduino/libraries/Robot_Control/src -I/usr/share/arduino/libraries/Robot_Control/src/utility -I/usr/share/arduino/libraries/Bridge -I/usr/share/arduino/libraries/Bridge/src -I/usr/share/arduino/libraries/Temboo -I/usr/share/arduino/libraries/Temboo/src -I/usr/share/arduino/libraries/Temboo/src/utility -I/usr/share/arduino/libraries/Firmata -I/usr/share/arduino/libraries/Firmata/utility -I/usr/share/arduino/libraries/Firmata/test -I/usr/share/arduino/libraries/Firmata/test/firmata_test -I/usr/share/arduino/hardware/arduino/avr/libraries/Wire -I/usr/share/arduino/hardware/arduino/avr/libraries/Wire/utility -I/usr/share/arduino/hardware/arduino/avr/libraries/EEPROM -I/usr/share/arduino/hardware/arduino/avr/libraries/SoftwareSerial -I/usr/share/arduino/hardware/arduino/avr/libraries/SPI  -MM $^ > $@
+	
+	@printf ".build_ano/uno/ExtraMath/ExtraMath.d .build_ano/uno/ExtraMath/" | cat - $@ > $@~ && mv $@~ $@
+
+
+
+.build_ano/uno/ExtraMath/dependencies.d : .build_ano/uno/ExtraMath/ExtraMath.d
+	@echo [96mScanning dependencies of ExtraMath[0m
+	@mkdir -p .build_ano/uno/ExtraMath
+	@cat $^ > $@;
+
+all : .build_ano/uno/ExtraMath/dependencies.d
+	@true
+
