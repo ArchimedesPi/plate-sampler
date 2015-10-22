@@ -1,0 +1,3 @@
+message UselessMessage {
+  required string uselessness = 1; // really quite useless!
+}
